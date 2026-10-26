@@ -1,0 +1,46 @@
+{
+  "pets": [
+    {
+      "id": "main",
+      "name": "蓝毛小女仆",
+      "size": 320,
+      "balanceEnabled": true,
+      "whisperEnabled": true,
+      "workStatusEnabled": true,
+      "fixedEnabled": true,
+      "display": "desktop",
+      "position": {
+        "corner": "bottom-right",
+        "marginX": 24,
+        "marginY": 100
+      }
+    }
+  ],
+  "notificationsEnabled": true,
+  "whisperImageEnabled": true,
+  "chatImageEnabled": true,
+  "confineToScreen": true,
+  "physics": {
+    "gravity": 1400,
+    "restitution": 0.78,
+    "groundFriction": 2.5,
+    "ceilingBounce": true,
+    "throwPower": 1,
+    "petCollision": false
+  },
+  "font": {
+    "family": "candy",
+    "size": 21,
+    "followPet": true
+  },
+  "whisperModel": {
+    "provider": "",
+    "model": ""
+  },
+  "chatModel": {
+    "provider": "",
+    "model": ""
+  },
+  "chatMemoryRounds": 5,
+  "chatImageLimit": 10
+}

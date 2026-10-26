@@ -1,0 +1,51 @@
+{
+  "name": "dsh-daifeiyu-pack",
+  "version": "0.1.0",
+  "description": "大肥鱼套装：把 DeepSeek Harness 的开机动画（仙愈剑人身份/配色）、P.R.T.S. 主题、蓝色大肥鱼桌宠一次装齐，并带一份可用的预设配置。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "deepseek-harness-desktop",
+    "startup",
+    "boot-animation",
+    "theme",
+    "desktop-pet"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "dsh-startup-screen": "file:./vendor/dsh-startup-screen",
+    "dsh-pet": "^0.3.8",
+    "@ash-qw/dsh-theme-prts": "^2.5.2"
+  },
+  "scripts": {
+    "test": "node test/smoke.mjs",
+    "seed": "node lib/index.js"
+  },
+  "files": [
+    "lib",
+    "presets",
+    "vendor",
+    "cordis.patch.yml",
+    "README.md",
+    "THIRD_PARTY_NOTICES.md",
+    "LICENSE"
+  ]
+}

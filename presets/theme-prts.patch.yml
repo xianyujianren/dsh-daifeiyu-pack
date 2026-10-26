@@ -1,0 +1,16 @@
+# 可选：把这段贴进你的 profile patch 末尾，让主题装完就自动开、且跟套装的观感一致。
+# 文件位置（二选一）：
+#   C:\Users\<你>\.dsh\profiles\desktop\cordis.patch.yml   ← 桌面端
+#   C:\Users\<你>\.dsh\profiles\web\cordis.patch.yml        ← dsh web
+#
+# 注意：这个插件的主题开关默认是「关」，光装上去只在设置里多一页、界面不变，
+#       所以要显式写 enabled: true；bootAnimation 留给开机动画插件，别两个一起抢。
+- id: theme-prts
+  name: "@ash-qw/dsh-theme-prts"
+  config:
+    enabled: true
+    bootAnimation: false
+    composerGlass: true
+    railDefaultHidden: true
+    previewFollowWarning: true
+    preferencesInitialized: true

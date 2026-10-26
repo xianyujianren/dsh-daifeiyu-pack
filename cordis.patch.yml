@@ -1,0 +1,10 @@
+# dsh-daifeiyu-pack —— 套装自己的 bundle patch
+#
+# 这里只挂「套装本体」这一行（它负责在启动时检查/种下预设配置）。
+# 套装带的三件本体不用在这里写：
+#   dsh-startup-screen（开机动画）、dsh-pet（桌宠）、@ash-qw/dsh-theme-prts（主题）
+#   都是本包的依赖，dsh plugin add 装完之后 DSH 会把它们各自的 bundle patch 自动并进层栈。
+#   在这里再 insert 一遍 = 同一个插件注册两次，apply 会跑两遍并报错。
+- insert:
+    - id: dsh-daifeiyu-pack
+      name: dsh-daifeiyu-pack
